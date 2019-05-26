@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>MAS</display-name>
+  <welcome-file-list>
+    <welcome-file>homepage.jsp</welcome-file>
+ </welcome-file-list>
+  <servlet>
+    <description>MainControllerServlet</description>
+    <display-name>MainControllerServlet</display-name>
+    <servlet-name>MainControllerServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.MainControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainControllerServlet</servlet-name>
+    <url-pattern>/MainControllerServlet</url-pattern>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>MainControllerServlet</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>MultiplexServlet</display-name>
+    <servlet-name>MultiplexServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.MultiplexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MultiplexServlet</servlet-name>
+    <url-pattern>/MultiplexServlet</url-pattern>
+    <url-pattern>/multiplex</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddupcomingmovieServlet</display-name>
+    <servlet-name>AddupcomingmovieServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.AddupcomingmovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddupcomingmovieServlet</servlet-name>
+    <url-pattern>/AddupcomingmovieServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>DeleteUpcomingMovieServlet</display-name>
+    <servlet-name>DeleteUpcomingMovieServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.DeleteUpcomingMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteUpcomingMovieServlet</servlet-name>
+    <url-pattern>/DeleteUpcomingMovieServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>DeleteAdminServlet</display-name>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <url-pattern>/DeleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowupcomingmovieServlet</display-name>
+    <servlet-name>ShowupcomingmovieServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.ShowupcomingmovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowupcomingmovieServlet</servlet-name>
+    <url-pattern>/ShowupcomingmovieServlet</url-pattern>
+ </servlet-mapping>
+ <servlet>
+    <description></description>
+    <display-name>PasswordSetServlet</display-name>
+    <servlet-name>PasswordSetServlet</servlet-name>
+    <servlet-class>com.tcs.ilp.ghy.G06.servlets.PasswordSetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PasswordSetServlet</servlet-name>
+    <url-pattern>/PasswordSetServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <error-page>
+  <exception-type>
+ 
+  javax.servlet.ServletException
+  
+  </exception-type>
+  <location>
+  /InternalError.jsp
+  </location>
+  
+  </error-page>
+  <session-config>
+		<session-timeout>2</session-timeout>
+	</session-config>
+
+  
+</web-app>

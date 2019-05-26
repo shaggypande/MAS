@@ -1,0 +1,93 @@
+body
+{
+background-image:[l]url('./Images/wood.jpg');
+background-color:white ;
+font-size:15px;
+font-family:Andalus;
+color:#FFFFFF;
+}
+pre
+{
+	font-family:Andalus;
+}
+
+ div#header {
+ width:1000px;
+ height:200px;
+ 
+}
+
+ div#header img {
+ width:1230px; 
+ height:200px; 
+
+}
+
+.tabFont
+{
+color:#FFFFFF;
+font-weight:bold;
+background-image:url('./Images/ra.jpg');
+border: 4px solid white;
+width:40%;
+height:70%;
+
+}
+
+div#footer {
+	width:1250px;
+	background-color:#000000;
+}
+
+
+div#footer a
+{
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:15px;
+	padding:5px;
+	text-decoration: none;
+
+	
+}
+
+div#footer a:hover
+{
+background:#BD7D33;
+color:#1f2025;
+
+}
+
+/*MENU*/
+
+
+.menu
+ {
+padding-left:px;
+}
+.menu li 
+{
+float:left; padding-left:3px; text-transform:uppercase; font:15px Andalus;
+}
+.menu li a 
+{
+display:block;background:darkblue; width:170px; padding:19px 0 18px; text-align:center; color:#eaeaea;text-decoration: none;
+
+}
+.menu li a em /*refers to the text*/
+{ 
+font-style:normal;color:#eaeaea;
+font-weight:bold;
+}
+.menu li a:hover /*to change bgcolor on placing the mouse*/
+{
+background:skyblue;
+}
+.menu li a:hover em /*to change the text color on placing the mouse*/
+{
+color:#1f2025;
+}
+
+
+
+
