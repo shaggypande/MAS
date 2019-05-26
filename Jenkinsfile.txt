@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                mvn clean install
                 echo 'Building..'
             }
         }
